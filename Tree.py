@@ -71,7 +71,14 @@ class BST:
                 
                 print("NODE FOUND")
 
-            
+    def height(self):
+        if self.root_node is None:
+                print("There is no nodes in the tree")
+        else:
+            return self._height(self.root_node, self.root_node)
+
+
+
 
     def printTree(self):
         if self.root_node!=None:
@@ -95,3 +102,4 @@ newTree.insert(14)
 
 newTree.printTree()
 newTree.search(15)
+newTree.height()
