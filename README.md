@@ -90,3 +90,4 @@ structure consisting of a group of nodes which together represent a sequence.
     * **Vertical Sharding:** Take each table, and you put it into a new machine.
     * **Horizontal Sharding:** Take a single table, and you split it into several machines.
 
+![Alt text](imgs/systemDesign.png?raw=true "SystemDesign")
