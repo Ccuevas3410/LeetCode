@@ -78,10 +78,14 @@ structure consisting of a group of nodes which together represent a sequence.
 * **Load Balancers** help to distribute traffic to many different web servers in order to help with latency, scalability and reliability. Load balancing techniques can optimise the response time for each task, avoiding unevenly overloading compute nodes while other compute nodes are left idle.
 * **Example:**  When a user access your website, instead of hitting a single host/web server , you can put a load balancer in that request and it would route the client request to different web servers in order to improve the task or avoid failing the task because that single host is down.
 
+![Alt text](imgs/loadBalancer.png?raw=true "LoadBalancer")
+
 ### Caching ###
 * Most of the times, you will be querying your database very often and fast. However, your main database will not be able to meet this demand. This is where a **cache** comes in, it is a high-speed data storage layer which stores a subset of data,  so that future requests for that data are served up faster than is possible by accessing the data’s primary storage location. Caching allows you to efficiently reuse previously retrieved or computed data.
 * **Example:** When first going into a website, it might take a bit longer to load. But once you load it for the first time, subsequent entries will be faster than the first time, because certain parts of the website will be cached in your computer, and so they will be faster to obtain the next time.
 * Different Caching systems: **Memcached**, **Redis**, **CDN Servers (Content Delivery Network)**.
+
+![Alt text](imgs/caching.png?raw=true "Caching")
 
 
 ### Database Sharding ##
@@ -89,5 +93,11 @@ structure consisting of a group of nodes which together represent a sequence.
 * Different ways Sharding: 
     * **Vertical Sharding:** Take each table, and you put it into a new machine.
     * **Horizontal Sharding:** Take a single table, and you split it into several machines.
+
+![Alt text](imgs/sharding.png?raw=true "Sharding")
+
+<p align="center">
+System Design example
+</p>
 
 ![Alt text](imgs/systemDesign.png?raw=true "SystemDesign")
