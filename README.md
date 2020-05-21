@@ -77,7 +77,9 @@ structure consisting of a group of nodes which together represent a sequence.
 ### Load Balancer ###
 * **Load Balancers** help to distribute traffic to many different web servers in order to help with latency, scalability and reliability. Load balancing techniques can optimise the response time for each task, avoiding unevenly overloading compute nodes while other compute nodes are left idle.
 * **Example:**  When a user access your website, instead of hitting a single host/web server , you can put a load balancer in that request and it would route the client request to different web servers in order to improve the task or avoid failing the task because that single host is down.
-
+<p align="center">
+## **Load Balancer Example** ##
+</p>
 ![Alt text](imgs/loadBalancer.png?raw=true "LoadBalancer")
 
 ### Caching ###
@@ -85,6 +87,9 @@ structure consisting of a group of nodes which together represent a sequence.
 * **Example:** When first going into a website, it might take a bit longer to load. But once you load it for the first time, subsequent entries will be faster than the first time, because certain parts of the website will be cached in your computer, and so they will be faster to obtain the next time.
 * Different Caching systems: **Memcached**, **Redis**, **CDN Servers (Content Delivery Network)**.
 
+<p align="center">
+## **Caching Example** ##
+</p>
 ![Alt text](imgs/caching.png?raw=true "Caching")
 
 
@@ -94,10 +99,13 @@ structure consisting of a group of nodes which together represent a sequence.
     * **Vertical Sharding:** Take each table, and you put it into a new machine.
     * **Horizontal Sharding:** Take a single table, and you split it into several machines.
 
+<p align="center">
+## **Sharding Example** ##
+</p>
 ![Alt text](imgs/sharding.png?raw=true "Sharding")
 
 <p align="center">
-System Design example
+## **System Design example** ##
 </p>
 
 ![Alt text](imgs/systemDesign.png?raw=true "SystemDesign")
