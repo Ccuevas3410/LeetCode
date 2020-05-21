@@ -27,5 +27,38 @@ structure consisting of a group of nodes which together represent a sequence.
     * Search: O(n)
     * Insert: O(1)
     * Remove: O(1)
-    
+
+### Queue ###   
+
+* A **Stack** is a one ended linear data structure that models a real world queue and only has 2 main operations, _queue()_ (Inputting) and _dequeue()_ (Removing).
+* It is a **FIFO (First in, first out)** data structure. **Pro's:** **Cons:**
+* Used in **real life queues models**, it can be used to keep track of most **recent elements**, also used in BFS (Breath First Search) on **Graphs**.
+* **Time Complexity**:
+    * Enqueue: O(1)
+    * Dequeue: O(n)
+    * Peeking: O(1)
+    * Contains: O(n)
+    * Removal : O(n)
+    * Is Empty: O(n)
+
+
+
+## Object-Oriented Progamming Concepts (Or as I like to remember them, "AEIP" ) ##
+
+### Abstraction ###
+Abstraction means, showcasing only the required things to the outside world while hiding the details.The concept of abstraction focuses on what an object does, instated of how an object is represented or “how it works.” Thus, data abstraction is often used for managing large and complex programs. **Example:** Lets use a HumanBeing class that can talk, walk, hear, eat, but the details of the muscles mechanism and their connections to the brain are hidden from the outside world.
+
+### Encapsulation ###
+Encapsulation means that we want to hide unnecessary details from the user. **Example:** When we call from our mobile phone, we select the number and press call button. But the entire process of calling or what happens from the moment we press or touch the call button to the moment we start having a phone conversation is hidden from us.
+
+### Inheritance ###
+Inheritance is a feature of object-oriented programming that allows code reusability when a class includes property of another class.**Example:** Considering our HumanBeing class, which has properties like hands, legs, eyes, mouth, etc, and functions like walk, talk, eat, see, etc. Man and Woman are also classes, but most of the properties and functions are included in our HumanBeing class. Hence, they can inherit these same methods from class the HumanBeing class.
+
+### Polymorphism ###
+Polymorphism is a concept, which allows us to redefine the way something works, by either changing how it is done or by changing the parts used to get it done. This can be done in two ways, overloading and overriding. **Example:** If we walk using our hands, and not legs, here we will change the parts used to perform something. Hence this is called **Overloading**. And if there is a defined way of walking, but I wish to walk differently, but using my legs, like everyone else. Then I can walk like I want, this will be called as **Overriding**.
+
+
+
+
+
 
