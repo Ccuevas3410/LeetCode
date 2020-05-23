@@ -42,17 +42,13 @@ class Stack:
 
         else:
          print ("Stack is empty, pop not allowed")
-    def 
+    
 
 s = Stack()
-s.push(13)
-s.push(130)
-s.push(456)
+s.push(10)
+s.push(20)
+s.push(30)
 s.print()
 s.pop()
-s.pop()
-s.pop()
-s.pop()
-
 print("NEW STAACK")
 s.print()
