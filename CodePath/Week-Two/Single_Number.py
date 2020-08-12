@@ -17,7 +17,6 @@
 numbers = [1,1,2,2,4,5,5,4,6]
 
 def single_number(nums):
-         a = set(nums)
          numMap = {}
 
          for i in nums:
