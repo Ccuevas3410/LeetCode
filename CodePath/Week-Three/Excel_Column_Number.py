@@ -1,18 +1,26 @@
 def titleToNumber(s) :
         
         
-      s = s [::-1]
-     
-      sum = 0
-      for i in range(0 ,len(s)):
+     sum = 0
+     for i in range(0 ,len(s)):
 
       
-               sum += ( (26 ** i) *  (ord(s[i]) - 64 ))
-            
-      print (sum)         
+          sum += (( 26 ** ((len(s) - 1) - i) ) *  (ord(s[i]) - 64 ))
+
+     print(sum)         
 
 
        
-       
+titleToNumber("BDA")
 
-print(titleToNumber("BDF"))
+    
+
+     # s = s [::-1]
+     
+     #  sum = 0
+     #  for i in range(0 ,len(s)):
+
+      
+     #           sum += ( (26 ** i) *  (ord(s[i]) - 64 ))
+        
+     #  return sum
