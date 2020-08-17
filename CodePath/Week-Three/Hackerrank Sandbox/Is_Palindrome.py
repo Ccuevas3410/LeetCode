@@ -18,11 +18,13 @@ def isPalindrome(a):
              cleaned_string += a[i]
 
      if cleaned_string == cleaned_string [::-1]:
-        return True
+        return 1
 
-     return False
+     return 0
 
 
 
 
 print(isPalindrome("Race Car"))
+print(isPalindrome("Ott0"))
+print(isPalindrome("Otto"))

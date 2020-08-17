@@ -15,33 +15,51 @@
 def caesarCipher(s, k):
 
 
-    newWord = ""
+    # newWord = ""
+    # for i in range(len(s)):
+
+        #  if s[i].isalpha() and s[i].islower():
+        #     if ord(s[i]) + k > 122:
+        #          newWord += chr( 96  + (( ord(s[i]) + k)%26))
+        #     else:  
+        #         newWord += chr(ord(s[i]) + k)
+
+
+        # #  elif s[i].isalpha() and s[i].isupper():
+        # #      if ord(s[i]) + k > 90:
+        # #          newWord += chr(64 + (( ord(s[i]) + k) %26))
+        # #      else:  
+        # #         newWord += chr(ord(s[i]) + k)   
+        #  else:
+        #      newWord += s[i]
+
+    new_Word = ""
+    is_upper = False
+
+    if s.isupper():
+        is_upper = True
+        s = s.lower()
+
+
     for i in range(len(s)):
+        curr_char = s[i]
+        curr_num = ord(curr_char) - 97
+        new_num = (curr_num + k) % 26
+        new_char = chr(new_num + 97)
+        new_Word+= new_char
 
-         if s[i].isalpha() and s[i].islower():
-            if ord(s[i]) + k > 122:
-                 newWord += chr( 96  + (( ord(s[i]) + k)%26))
-            else:  
-                newWord += chr(ord(s[i]) + k)
-
-
-        #  elif s[i].isalpha() and s[i].isupper():
-        #      if ord(s[i]) + k > 90:
-        #          newWord += chr(64 + (( ord(s[i]) + k) %26))
-        #      else:  
-        #         newWord += chr(ord(s[i]) + k)   
-         else:
-             newWord += s[i]
-
-    return newWord
+    if is_upper:
+        return new_Word.upper()
+    else:   
+         return  new_Word
 
 
-print(caesarCipher("middle-Outz",2))
+
+print(caesarCipher("acf",4))
+print(caesarCipher("zcf",25))
+print(caesarCipher("alecmori",13))
 
 
-print((ord("t") + 2) % 26)
-
-print(chr(97+14))
 
 
 

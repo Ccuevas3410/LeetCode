@@ -21,11 +21,18 @@
 def excel_column_to_number(column):
     sum_num = 0
     for i in range(len(column)):
-        
-          sum_num += (((26 ** i) *  (ord(column[len(column) - i -1]) - 64 )))
+
+        ##We use i in the first half to tell us the column we are on
+
+
+          column_on = (26 ** i) # Column 0, 1 etc
+
+          #We then multiply that by the ord number of the letter, we go from right to left
+          
+          sum_num += (( column_on *  (ord(column[len(column) - i -1]) - 64 )))
     return sum_num
 
        
 
 
-print(excel_column_to_number("BA"))
+print(excel_column_to_number("AA"))
