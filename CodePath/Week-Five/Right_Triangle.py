@@ -1,8 +1,8 @@
 def right_triangle(n):
     triangle_array =[]
 
-    for row in range(n):
-        current_row = [0] * (row+1) 
+    for row in range(n+1):
+        current_row = [0] * (row) 
         triangle_array.append(current_row )
     
     return triangle_array 
