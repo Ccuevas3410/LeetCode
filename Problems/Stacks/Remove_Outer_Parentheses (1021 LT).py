@@ -50,8 +50,9 @@ def removeOuterParentheses(S):
     answer = []
 
     for i in S:
-      
-        if i == ")":
+        if not  stack:
+            stack.append(i)
+        elif i == ")":
             stack.pop()
             if  stack:
                 answer.append(i)
